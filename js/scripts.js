@@ -15,7 +15,7 @@ $(document).ready(function() {
 
 //Szerokość  .gallery
 
-$(document).ready(function() {
+function resizeGalleryWidth() {
 	$('.gallery').each(function() {
     	// get margin right & width .container
     	var margR = parseInt($(".container").css('marginRight'));
@@ -26,7 +26,10 @@ $(document).ready(function() {
     	$(".gallery").css('width', currentWidth + margR);
     
 	});
-});
+}
+
+$(window).resize(resizeGalleryWidth);
+$(document).ready(resizeGalleryWidth);
 
 
 

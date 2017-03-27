@@ -1,5 +1,5 @@
 /* SASS Document */
-@import url("https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Source+Sans+Pro|Qwigley");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Source+Sans+Pro|Qwigley|Jim+Nightshade|Nova+Oval|Cinzel");
 * {
   box-sizing: border-box;
   outline-style: none; }
@@ -83,26 +83,28 @@ button {
     font-family: "Qwigley", cursive;
     font-size: 3em;
     padding-top: 5px;
-    color: #e0e788; }
+    color: #f3bf53; }
 
 .navbar .container {
   padding: 0; }
 
 .navbar-default {
-  background-color: #2e3712;
+  background-color: #0f0f11;
   border-color: transparent;
-  color: #bbc35b; }
+  color: #f3bf53; }
   .navbar-default .navbar-nav li a {
-    color: #bbc35b;
+    color: #f3bf53;
     font-family: Raleway, sans-serif; }
     .navbar-default .navbar-nav li a:hover {
-      color: #dfe784; }
+      color: #ffad00; }
     .navbar-default .navbar-nav li a:visited {
-      color: #dfe780; }
+      color: #ffad00; }
+    .navbar-default .navbar-nav li a:focus {
+      color: #ffad00; }
 
 /*JUMBOTRON */
 .jumbotron {
-  background: url("images/lampart.jpg") 0/cover;
+  background: url("images/eagle1.jpeg") 0/cover;
   height: calc(100vh - 50px);
   margin-bottom: 0; }
 
@@ -125,6 +127,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+
+#news h3 {
+  color: #71634c; }
 
 .text-50 {
   width: 45%; }
@@ -222,44 +227,54 @@ button {
   .brown h4, .brown h6, .brown i {
     color: #fff; }
 
-.goats {
-  background: url("images/th-grain.jpg") 0/cover; }
+.land {
+  background: url("images/th-land1.jpg") 0/cover; }
 
-.leaf {
-  background: url("http://ink.media.pl/nature/th-leaf1.jpg") 0/cover; }
+.goat {
+  background: url("images/th-sheep.jpg") 0/cover; }
 
-.thistle {
-  background: url("http://ink.media.pl/nature/th-sow-thistle1.jpg") 0/cover; }
+.elephant {
+  background: url("images/th-small-elephant.jpg") 0/cover; }
 
 /*ABOUT */
 .about {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .about h4 {
+    color: #71634c; }
+
+#about h3 {
+  color: #71634c; }
 
 .advert {
   width: 20%; }
 
 /*PHOTO */
 .photo {
-  background: url("images/landscape.jpg") 0/cover;
-  height: 70vh; }
+  background: url("images/lizard.jpg") 0/cover;
+  height: 80vh; }
 
-.quote {
-  display: block;
-  width: 291px;
-  margin: 0 auto;
-  transform: translateY(120%); }
+#photo h1 {
+  text-align: center;
+  margin-bottom: 70px;
+  font-weight: 100;
+  color: #71634c;
+  font-family: "Cinzel", serif; }
 
 /*JOIN */
 .join-color {
   background-color: #bbc35b;
   padding-bottom: 2%; }
+  .join-color h3 {
+    color: #62543d; }
 
 .join {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .join h4 {
+    color: #62543d; }
 
 .advert30 {
   width: 30%; }
@@ -366,15 +381,198 @@ footer {
     .navbar-nav li a {
       line-height: 30px; }
 
-  .transparent {
-    margin: 0;
-    padding: 0;
+  .brand {
+    padding-top: 3%;
     float: none;
-    display: block;
-    top: 30%;
-    margin: 0 auto;
+    width: inherit; }
+    .brand h2 {
+      text-align: center; }
+
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .hedlines {
+    padding-left: 3%; }
+
+  .text-50 {
+    width: 90%;
+    padding: 0 3%; }
+
+  .text-50-right .btn-warning {
+    width: 100%; }
+
+  .text-50-right .btn-default {
+    margin: 0;
+    margin-top: 4%; }
+
+  .col-50, .col-25, .col-50 {
+    width: 100%; }
+
+  #about h3 {
+    padding-left: 3%; }
+
+  .about {
+    padding: 0 3%; }
+
+  .advert {
+    width: 100%; }
+
+  .photo {
+    background-position: 63% 50%; }
+
+  .join {
+    padding-left: 3%; }
+
+  .join-color {
+    padding-left: 3%; }
+
+  .advert30 {
+    width: 100%; }
+
+  .shadow {
+    margin: 4%; }
+
+  .search h5, .search p {
+    padding-left: 3%; }
+  .search .navbar-form {
+    padding: 8%; }
+    .search .navbar-form .form-group {
+      margin-bottom: 15px; }
+
+  .small-blurb {
+    width: 100%; }
+
+  .blurb {
+    width: 90%;
+    padding-left: 3%; } }
+@media (min-width: 481px) and (max-width: 768px) {
+  .container {
+    padding: 2% 2% 4% 5%; }
+
+  .navbar-fixed-top {
+    position: static;
+    margin: 0px; }
+
+  body {
+    padding-top: 0px; }
+
+  .navbar-nav {
+    float: none;
+    text-align: center; }
+    .navbar-nav li a {
+      line-height: 30px; }
+
+  .brand {
+    padding-top: 3%;
+    float: none;
+    width: inherit; }
+    .brand h2 {
+      text-align: center; }
+
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .col-25, .col-50 {
+    width: 50%; }
+
+  .col-50 {
+    width: 100%; }
+
+  #about h3 {
+    padding-left: 3%; }
+
+  .about {
+    padding: 0 3%; }
+
+  .advert {
+    width: 45%; }
+
+  .photo {
+    background-position: 50% 50%; }
+
+  #photo h1 {
+    padding: 0 15%; }
+
+  .search h5, .search p {
+    padding-left: 3%; }
+  .search .navbar-form {
+    padding: 8%; }
+    .search .navbar-form .form-group {
+      margin-bottom: 15px; }
+
+  .small-blurb {
+    width: 100%; }
+
+  .blurb {
+    width: 90%;
+    padding-left: 3%; }
+
+  .contact .text-50 {
+    width: 90%;
+    padding-left: 3%; } }
+@media (min-width: 769px) and (max-width: 991px) {
+  .brand {
     width: 300px; }
-    .transparent .quote-jumbo {
-      width: 300px; } }
+
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .quote-jumbo, .transparent {
+    width: 300px; }
+
+  .transparent {
+    margin-right: 7%; }
+
+  .col-25, .col-50 {
+    width: 50%; }
+
+  .col-50 {
+    width: 100%;
+    background-position: 50% 80%; }
+
+  .small-blurb {
+    width: 100%; } }
+@media (min-width: 992px) and (max-width: 1200px) {
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .quote-jumbo, .transparent {
+    width: 300px; }
+
+  .goat {
+    background-position: 50% 50%; } }
+@media (min-width: 1201px) and (max-width: 1450px) {
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .quote-jumbo, .transparent {
+    width: 350px; }
+
+  .goat {
+    background-position: 50% 50%; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .quote-jumbo, .transparent {
+    width: 350px; }
+
+  .goat {
+    background-position: 50% 50%; }
+
+  .photo {
+    background-position: 50% 50%; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+  .jumbotron {
+    background-position: 50% 50%; }
+
+  .quote-jumbo, .transparent {
+    width: 350px; }
+
+  .goat {
+    background-position: 50% 50%; }
+
+  .photo {
+    background-position: 50% 50%; } }
 
 /*# sourceMappingURL=style.css.map */

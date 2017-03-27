@@ -1,0 +1,754 @@
+/* SASS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Raleway|Slabo+27px|Source+Sans+Pro|Qwigley|Jim+Nightshade|Nova+Oval|Cinzel')
+
+$greenery: #bbc35b
+$orange: #ffad00
+$orange-light: #f3bf53
+$gold: #cba75b
+$brown: #62543d
+$brown-light: #71634c
+$dark-green: #2e3712
+$font: Raleway, sans-serif
+$font-stack: "Source Sans Pro"
+$dark: #000
+
+* 
+	box-sizing: border-box
+	outline-style: none
+	
+	&:hover,
+	&:focus,
+	&:visited,
+	&.active,
+	&.focus,
+	&.visited
+		outline-style: none
+		outline: none
+
+.btn
+	&:active:focus, 
+	&:focus
+		otuline-style: none
+		outline: none
+		outline-offset: 0 	
+	
+	
+html,
+body,
+ul,
+ol
+	margin: 0 
+	padding: 0
+	
+body 
+	padding-top: 50px
+	
+	
+row:before,
+row:after
+	content: ""
+	display: table
+	
+row:after
+	clear: both	
+	
+.container 
+	max-width: 1200px
+	margin: 0 auto
+	padding: 2% 2% 4% 2%
+	
+	
+h1, h2, h3, h4, h5
+	margin: 0 
+	padding-top: 2%
+	text-align: left
+	font-family: $font
+	
+	
+h4
+	font-weight: bold
+	padding-bottom: 7%
+	
+h3
+	padding-top: 4%
+	padding-bottom: 5%
+	font-weight: bold
+	font-size: 2.1em
+	
+p
+	font-family: $font-stack
+	font-size: 1.1em
+	
+a, 
+button 
+	border: transparent
+	box-shadow: none
+	
+	&:hover
+		border: transparent
+		box-shadow: none
+	
+	&:focus
+		border: transparent
+		box-shadow: none
+	
+	&:visited
+		border: transparent
+		box-shadow: none
+
+	
+/*NAVIGATION*/
+
+.navbar-nav
+	float: right
+	
+	
+.brand
+	float: left
+	width: 500px
+
+	
+	h2
+		font-family: "Qwigley", cursive
+		font-size: 3em
+		padding-top: 5px
+		color: $orange-light
+		
+.navbar
+	.container
+		padding: 0
+		
+.navbar-default
+	background-color: #0f0f11
+	border-color: transparent
+	color: $orange-light
+	
+	.navbar-nav
+		li
+			a
+				color: $orange-light
+				font-family: $font
+				
+				&:hover 
+					color: $orange
+				&:visited
+					color: $orange
+				&:focus
+					color: $orange
+					
+
+
+/*JUMBOTRON*/
+
+.jumbotron
+	background: url("images/eagle1.jpeg") 0/cover
+	height: calc(100vh - 50px)
+	margin-bottom: 0
+	
+.transparent
+	float: right
+	padding: 2%
+	/*background-color: rgba(0, 0, 0, 0.3)*/	
+	margin: 3%
+	margin-top: 10%
+	margin-right: 10%
+	width: 400px
+	height: 250px
+
+	
+.quote-jumbo
+	position: absolute
+	width: 400px
+		
+	
+			
+	
+/*NEWS*/
+
+.news
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	
+#news 
+	h3
+		color: $brown-light	
+	
+.text-50
+	width: 45%
+	
+.headline
+	font-weight: bold
+	
+.text-50-right
+	.btn-warning
+		display: block
+		width: 70%
+		margin: 0 auto
+
+.text-50-right
+	.btn-default
+		display: block
+		width: 50%
+		margin: 0 auto
+		background-color: $brown-light
+		color: white
+		
+		&:hover
+			background-color: $brown	
+			
+
+/*GALLERY*/
+
+.gallery 
+	display: block
+	float: right
+	/*max-width: calc(90vw - 4%)*/
+	text-align: left
+	
+.col-25
+	width: 25%
+	float: left 
+	position: relative
+	height: 250px
+		
+	&:hover .layer
+		display: block
+	
+	
+.col-25, .col-50	
+	.layer
+		float: left
+		width: 100%
+		height: 250px
+		display: none
+		background-color: rgba(0, 0, 0, 0.3)
+		margin: 0
+		padding: 0
+		text-align: center
+		i
+			color: $orange
+			font-size: 30px
+			margin-top: 120px
+			padding: 5px
+		
+	
+.col-50
+	@extend .col-25
+	width: 50%
+	
+	&:hover .layer 
+		display: block	
+	
+		
+.col-25
+	p 
+		padding: 3%
+		color: #fff
+		font-size: 1.1em
+		margin: 3%
+	h4 
+		margin-left: 3%
+		padding: 0
+		padding-left: 3%
+		margin-top: 10%
+		
+	h6
+		margin-left: 3%
+		padding: 0
+		padding-left: 3%
+		display: inline-block
+		
+.gall-text
+	i
+		color: $dark	
+		font-size: 1em
+		padding-left: 2%
+
+.orange 
+	background-color: $orange-light
+	p
+		color: $dark
+
+	
+.gold
+	background-color: $gold
+	p
+		color: $dark
+	
+
+	
+.green
+	background-color: $greenery
+	p
+		color: $dark
+
+	
+.brown
+	background-color: $brown-light
+	
+	h4, h6, i
+		color: #fff
+	
+
+
+.land
+	background: url("images/th-land1.jpg") 0/cover
+
+
+.goat
+	background: url("images/th-sheep.jpg") 0/cover
+
+	
+.elephant
+	background: url("images/th-small-elephant.jpg") 0/cover
+	
+
+
+/*ABOUT*/
+
+.about 
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	
+	h4 
+		color: $brown-light
+	
+#about
+	h3
+		color: $brown-light
+		
+	
+.advert
+	width: 20%
+
+
+
+
+/*PHOTO*/
+
+.photo
+	background: url("images/lizard.jpg") 0/cover
+	height: 80vh
+	
+#photo
+	h1
+		text-align: center
+		margin-bottom: 70px
+		font-weight: 100
+		color: $brown-light
+		font-family: 'Cinzel', serif
+	
+
+
+				
+
+
+/*JOIN*/
+
+.join-color
+	background-color: $greenery
+	padding-bottom: 2%
+	
+	h3
+		color: $brown
+	
+.join
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	
+	h4
+		color: $brown
+
+.advert30
+	width: 30%
+	
+	
+/*SALE*/
+
+.sale
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	
+.text-50
+	div
+		padding: 5%
+		
+		.btn
+			margin-bottom: 2%
+			font-family: $font-stack
+		
+		.icons 
+			display: block
+			color: #bbb
+			font-size: 1.2em
+			padding: 0
+		
+		.btn-green
+			background-color: $greenery
+			font-weight: bold
+			
+			&:hover
+				background-color: #9ca346
+	
+#sale
+	.container
+		padding-top: 7%
+		padding-bottom: 7%
+
+.shadow
+	box-shadow: 0 0 1em #bbb
+	
+
+	
+/*FOOTER*/
+
+footer
+	background-color: $brown
+	color: #e9d3af
+	
+.address
+	padding-top: 0
+		
+	
+.contact 
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	padding-top: 5%
+	
+#contact
+	.container
+		padding-bottom: 2%
+	
+.small-blurb
+	display: flex
+	flex-wrap: wrap
+	justify-content: spacie-between
+	width: 50%
+	
+.blurb
+	width: 30%
+	
+	h5
+		font-weight: bold
+		padding-bottom: 3%
+		font-family: $font-stack
+		font-size: 1.2em
+
+.rights
+	background-color: #3f3729
+	text-align: center
+	
+	p
+		padding: 5px 0
+		color: #a38451
+		
+.form-control
+	&:focus
+		border: none
+		box-shadow: none
+	&:visited
+		border: none
+		box-shadow: none
+		
+.search 
+	p 
+		display: block
+		
+	h5 
+		font-weight: bold
+		
+	.navbar-right 
+		float: none!important
+		
+	.navbar-form
+		margin-right: 0
+		padding: 0
+		
+		
+.navbar-right
+	float: none!important
+				
+
+/*------------------------------------------------@MEDIA-----------------------------------------------------------------*/
+
+$breakpoints: (phone: 640px, tablet: 768px, desktop: 1024)
+
+@media (max-width: 480px)
+	
+	.navbar-fixed-top
+		position: static
+		margin: 0px
+		
+	body
+		padding-top: 0px
+		
+	.navbar-nav
+		float: none
+		text-align: center
+		
+		li
+			a
+				line-height: 30px
+				
+	.brand
+		padding-top: 3%
+		float: none
+		width: inherit
+		
+		h2
+			text-align: center
+			
+	.jumbotron
+		background-position: 50% 50%
+		
+
+	
+	.hedlines
+		padding-left: 3%
+		
+	.text-50
+		width: 90%
+		padding: 0 3%
+		
+	.text-50-right 
+		.btn-warning
+			width: 100%
+			
+	.text-50-right 
+		.btn-default
+			margin: 0
+			margin-top: 4%
+			
+	.col-50, .col-25
+		width: 100%
+		
+	#about h3
+		padding-left: 3%
+		
+	.about
+		padding: 0 3%
+		
+	.advert
+		width: 100%
+		
+	.photo
+		background-position: 63% 50%
+		
+	.join
+		padding-left: 3%
+	
+	.join-color
+		padding-left: 3%
+		
+	.advert30
+		width: 100%
+		
+	.shadow
+		margin: 4%
+		
+	.search
+		h5, p
+			padding-left: 3%
+			 
+		.navbar-form
+			padding: 8%
+			
+			.form-group
+				margin-bottom: 15px
+				
+	.small-blurb
+		width: 100%
+		
+	.blurb
+		width: 90%
+		padding-left: 3%
+		
+
+
+@media (min-width: 481px) and (max-width: 768px)
+
+	.container
+		padding: 2% 2% 4% 5%
+
+	.navbar-fixed-top
+		position: static
+		margin: 0px
+		
+	body
+		padding-top: 0px
+		
+	.navbar-nav
+		float: none
+		text-align: center
+		
+		li
+			a
+				line-height: 30px
+				
+	.brand
+		padding-top: 3%
+		float: none
+		width: inherit
+		
+		h2
+			text-align: center
+			
+	.jumbotron
+		background-position: 50% 50%
+		
+		
+	.col-25
+		width: 50%
+		
+	.col-50
+		width: 100%
+		
+	#about h3
+		padding-left: 3%
+		
+	.about
+		padding: 0 3%
+		
+	.advert
+		width: 45%
+		
+	.photo
+		background-position: 50% 50%
+		
+	#photo 
+		h1
+			padding: 0 15%
+			
+	.search
+		h5, p
+			padding-left: 3%
+			 
+		.navbar-form
+			padding: 8%
+			
+			.form-group
+				margin-bottom: 15px
+				
+	.small-blurb
+		width: 100%
+		
+	.blurb
+		width: 90%
+		padding-left: 3%
+		
+	.contact
+		.text-50
+			width: 90%
+			padding-left: 3%
+			
+			
+@media (min-width: 769px) and (max-width: 991px)
+		
+	.brand
+		width: 300px
+			
+		
+	.jumbotron
+		background-position: 50% 50%
+		
+	.quote-jumbo, .transparent
+		width: 300px
+		
+	.transparent
+		margin-right: 7%
+		
+	.col-25
+		width: 50%
+		
+	.col-50
+		width: 100%
+		background-position: 50% 80%
+		
+	.small-blurb
+		width: 100%
+		
+@media (min-width: 992px) and (max-width: 1200px)
+
+	.jumbotron
+		background-position: 50% 50%
+		
+	
+	.quote-jumbo, .transparent
+		width: 300px
+		
+	.goat
+		background-position: 50% 50%
+		
+@media (min-width: 1201px) and (max-width: 1450px)
+
+	
+	.jumbotron
+		background-position: 50% 50%
+		
+	
+	.quote-jumbo, .transparent
+		width: 350px
+		
+	.goat
+		background-position: 50% 50%
+		
+		
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1)
+
+
+	.jumbotron
+		background-position: 50% 50%
+		
+	
+	.quote-jumbo, .transparent
+		width: 350px
+		
+	.goat
+		background-position: 50% 50%
+		
+	.photo
+		background-position: 50% 50%
+		
+		
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)
+
+	.jumbotron
+		background-position: 50% 50%
+		
+	
+	.quote-jumbo, .transparent
+		width: 350px
+		
+	.goat
+		background-position: 50% 50%
+		
+	.photo
+		background-position: 50% 50%
+		
+
+	
+	
+		
+
+
+	
+		
+	
+			
+		
+		
+
+		 
+
+
+	
+
+	
+	
+
