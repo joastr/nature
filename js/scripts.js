@@ -18,7 +18,7 @@ $(document).ready(function() {
 function resizeGalleryWidth() {
 	$('.gallery').each(function() {
     	// get margin right & width .container
-    	var margR = parseInt($(".container").css('marginRight'));
+    	margR = ($(document).width() - $(".container").width()) / 2
 		var currentWidth = parseInt($(".container").width());
 		var padR = parseInt($(".container").css('paddingRight'));
 	

@@ -152,11 +152,15 @@ button {
     background-color: #62543d; }
 
 /*GALLERY */
+#gallery {
+  overflow-x: hidden; }
+
 .gallery {
   display: block;
   float: right;
   /*max-width: calc(90vw - 4%) */
-  text-align: left; }
+  text-align: left;
+  overflow-x: hidden; }
 
 .col-25, .col-50 {
   width: 25%;
@@ -206,26 +210,44 @@ button {
   color: #000;
   font-size: 1em;
   padding-left: 2%; }
+  .gall-text i:hover {
+    color: #5c3902; }
 
 .orange {
   background-color: #f3bf53; }
-  .orange p {
+  .orange p, .orange a {
     color: #000; }
+  .orange a {
+    text-decoration: none; }
+    .orange a:hover {
+      color: #5c3902; }
 
 .gold {
   background-color: #cba75b; }
-  .gold p {
+  .gold p, .gold a {
     color: #000; }
+  .gold a {
+    text-decoration: none; }
+    .gold a:hover {
+      color: #5c3902; }
 
 .green {
   background-color: #bbc35b; }
-  .green p {
+  .green p, .green a {
     color: #000; }
+  .green a {
+    text-decoration: none; }
+    .green a:hover {
+      color: #5c3902; }
 
 .brown {
   background-color: #71634c; }
-  .brown h4, .brown h6, .brown i {
+  .brown h4, .brown i, .brown a {
     color: #fff; }
+  .brown a, .brown i {
+    text-decoration: none; }
+    .brown a:hover, .brown i:hover {
+      color: #d3b88d; }
 
 .land {
   background: url("images/th-land1.jpg") 0/cover; }
@@ -344,7 +366,8 @@ footer {
   text-align: center; }
   .rights p {
     padding: 5px 0;
-    color: #a38451; }
+    color: #a38451;
+    margin: 0; }
 
 .form-control:focus {
   border: none;

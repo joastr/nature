@@ -12,6 +12,7 @@ $dark-green: #2e3712
 $font: Raleway, sans-serif
 $font-stack: "Source Sans Pro"
 $dark: #000
+$darkhover: #5c3902
 
 * 
 	box-sizing: border-box
@@ -201,11 +202,16 @@ button
 
 /*GALLERY*/
 
+#gallery
+	overflow-x: hidden
+
+
 .gallery 
 	display: block
 	float: right
 	/*max-width: calc(90vw - 4%)*/
 	text-align: left
+	overflow-x: hidden
 	
 .col-25
 	width: 25%
@@ -265,31 +271,55 @@ button
 		color: $dark	
 		font-size: 1em
 		padding-left: 2%
+		
+		&:hover
+			color: $darkhover
 
 .orange 
 	background-color: $orange-light
-	p
+	p, a
 		color: $dark
+	a
+		text-decoration: none
+		
+		&:hover
+			color: $darkhover
 
 	
 .gold
 	background-color: $gold
-	p
+	p, a
 		color: $dark
+	a
+		text-decoration: none
+		
+		&:hover
+			color: $darkhover
 	
 
 	
 .green
 	background-color: $greenery
-	p
+	p, a
 		color: $dark
+	a
+		text-decoration: none
+		
+		&:hover
+			color: $darkhover
 
 	
 .brown
 	background-color: $brown-light
 	
-	h4, h6, i
+	h4, i, a
 		color: #fff
+	a, i
+		text-decoration: none
+		
+		&:hover
+			color: #d3b88d
+
 	
 
 
@@ -447,6 +477,7 @@ footer
 	p
 		padding: 5px 0
 		color: #a38451
+		margin: 0
 		
 .form-control
 	&:focus
